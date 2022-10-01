@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Devroye Unicode';
+    src: url('DevroyeUnicode.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Devroye SCOSF';
+    src: url('DevroyeSCOSF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Devroye Extra';
+    src: url('DevroyeExtra.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Devroye';
+    src: url('Devroye.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
