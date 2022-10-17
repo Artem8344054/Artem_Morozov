@@ -512,7 +512,7 @@ a {
 /* fileContacts */
 
 .headerHeight {
-	width: 1100px;
+	width: 1140px;
 	height: 100%;
 	margin: 0% auto;
 }
@@ -534,6 +534,9 @@ a {
 .containerOuter {
 	width:942px;
 	margin: 0 auto;
+	margin: 438px  0 35px 65px;
+	display: grid;
+	
 }
 
 .containerIner1 {
@@ -548,7 +551,7 @@ a {
 	 
 }
 
-.containerOurContact
+
 
 
 
@@ -556,9 +559,9 @@ a {
 @media screen and (max-width:1204px) {
     
 .container {
-	width: 704px;
-    margin: 0 215px;
-	display:block;
+        width: 704px;
+        margin: 0 215px;
+		display:block;
 	}
 	
 header .container {
@@ -1065,3 +1068,4 @@ color: #000000;
     }
     
 }
+
