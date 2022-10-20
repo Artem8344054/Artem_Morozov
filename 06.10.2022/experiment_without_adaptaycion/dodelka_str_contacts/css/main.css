@@ -366,7 +366,7 @@ a {
     display: grid;
     gap: 32px;
 	grid-template-areas: 'a a' 'b c';
-	margin-top: 64px;
+	margin-top: 50px;
 	margin-bottom: 80px;
 	
 	/* width: 100%; */
@@ -409,17 +409,17 @@ a {
  
  .text2 {
 	/* position: absolute; */
-	width: 750px;
+	/* width: 750px; */
 	/* height: 52px; */
-	/* font-family: 'Roboto'; */
-	/* font-style: normal; */
-	/* font-weight: 400; */
-	/* font-size: 16px; */
-	/* line-height: 26px; */
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
 	text-align: center;
-	/* letter-spacing: 0.05em; */
+	letter-spacing: 0.05em;
 	color: #222222;
-	margin: auto;
+	/* margin-bottom: 100px; */
  }
  
  .first p {
@@ -486,16 +486,16 @@ a {
     /* border-radius: 10px; */
     /* grid-area: c; */
     background: url('../images/MaskGroup3.png') center no-repeat;
-	/* padding-top: 47px; */
-	/* padding-left: 32px; */
+	padding-top: 47px;
+	padding-left: 32px;
 	/* margin-bottom: 167; */
-	/* position: relative; */
+	position: relative;
 }
 
 .third p {
 	/* width: 260px; */
-	left: 42px;
-	top: 47px;
+	/* left: 20px; */
+	/* top: 320px; */
 	/* float: left; */
 	/* height: 52px; */
 	/* font-family: 'Roboto'; */
@@ -506,7 +506,7 @@ a {
 	letter-spacing: 0.05em;
 	color: #FFFFFF;
 	/* margin: 0px 0px 0px 0px; */
-	position: relative;
+	/* position: absolute; */
 }
 
 /* fileContacts */
@@ -533,10 +533,13 @@ a {
 
 .containerOuter {
 	width:942px;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	margin: 438px  0 35px 65px;
-	display: grid;
-	
+	margin-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 92px;
 }
 
 .containerIner1 {
@@ -634,17 +637,17 @@ a {
 	
 .text2 {
 	width: 520px;
-	/* height: 78px; */
-	/* font-family: 'Roboto'; */
-	/* font-style: normal; */
-	/* font-weight: 400; */
-	/* font-size: 16px; */
-	/* line-height: 26px; */
-	/* text-align: center; */
-	/* letter-spacing: 0.05em; */
-	/* color: #222222; */
-	/* display: inline-block; */
-	margin: auto;
+	height: 78px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	color: #222222;
+	display: inline-block;
+	margin: 0 300px;
 }	
 
 .container_trio {
@@ -859,7 +862,7 @@ a {
     
 	.grad {
     /* width: 376px; */
-	height: 376px;
+	height: 395px;
     background: linear-gradient(0deg, #EBF3FB 25%, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 	/* display: block; */
 }
@@ -876,37 +879,40 @@ a {
 	
 
 .grad .container .zagolovok {
-	/* width: 350px; */
+	width: 350px;
 	height: 76px;
-	margin: 0 0 15px 0;
+	margin: 0 0 25px 0;
+	
+
 	/* left: 31.51px; */
 	/* top: 92px; */
-	/* font-family: 'Roboto'; */
-	/* font-style: normal; */
-	/* font-weight: 300; */
+
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
 	font-size: 32px;
 	line-height: 38px;
-	/* text-align: center; */
-	/* letter-spacing: 0.04em; */
-	/* color: #1F3F68; */
+	text-align: center;
+	letter-spacing: 0.04em;
+
+	/* Blue_01 */
+
+	color: #1F3F68;
 
 }
 	
 .grad .container p {
     width: 343px;
 	height: 96px;
-	margin: 0 0 25px 15px;
+	margin: 0 0 20px 0;
 	text-align: center;
 }
 
 .grad .container button {	
 	position: relative;
-    left: 35%;
-	width: 108px;
-	height: 27px;
-	font-weight: 400px;
-	font-size: 12px;
-	line-height: 26px;
+    margin-left: 90px;
+	width: 150px;
+	height: 50px;
 }	
 	
 	
