@@ -407,22 +407,22 @@ a {
 	
  }
  
- .text2 {
+.text2 {
 	/* position: absolute; */
-	/* width: 750px; */
+	width: 750px;
 	/* height: 52px; */
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 26px;
+	/* font-family: 'Roboto'; */
+	/* font-style: normal; */
+	/* font-weight: 400; */
+	/* font-size: 16px; */
+	/* line-height: 26px; */
 	text-align: center;
-	letter-spacing: 0.05em;
+	/* letter-spacing: 0.05em; */
 	color: #222222;
-	/* margin-bottom: 100px; */
+	margin: auto;
  }
  
- .first p {
+.first p {
 	/* position: absolute; */
 	/* width: 398px; */
 	/* height: 112px; */
@@ -486,16 +486,16 @@ a {
     /* border-radius: 10px; */
     /* grid-area: c; */
     background: url('../images/MaskGroup3.png') center no-repeat;
-	padding-top: 47px;
-	padding-left: 32px;
+	/* padding-top: 47px; */
+	/* padding-left: 32px; */
 	/* margin-bottom: 167; */
-	position: relative;
+	/* position: relative; */
 }
 
 .third p {
 	/* width: 260px; */
-	/* left: 20px; */
-	/* top: 320px; */
+	left: 42px;
+	top: 47px;
 	/* float: left; */
 	/* height: 52px; */
 	/* font-family: 'Roboto'; */
@@ -506,7 +506,7 @@ a {
 	letter-spacing: 0.05em;
 	color: #FFFFFF;
 	/* margin: 0px 0px 0px 0px; */
-	/* position: absolute; */
+	position: relative;
 }
 
 /* fileContacts */
@@ -516,7 +516,6 @@ a {
 	height: 100%;
 	margin: 0% auto;
 }
-	
 .headLiner {
 
 	/* background-image: linear-gradient(white, gray); */
@@ -532,13 +531,9 @@ a {
 
 .containerOuter {
 	width:942px;
-	/* margin: 0 auto; */
+	margin: 0 auto;
 	margin: 438px  0 35px 65px;
-	margin-bottom: 30px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	gap: 92px;
+	display: grid;
 }
 
 .containerOurContact {
@@ -548,83 +543,14 @@ a {
 	float:left;
 	display: grid;
 }
-
-
-	
 .containerOurContact img {
-	
-	
-	width: 300px;
-	height:181px;
 	 
 }
-	 
-.ourAdress  {
-	font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 30px;
-/* identical to box height, or 150% */
-
-letter-spacing: 0.04em;
-
-/* Blue_01 */
-
-color: #1F3F68;
-
-}
-.ourNamber {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 26px;
-	/* or 162% */
-	margin-left: 0px;
-	letter-spacing: 0.04em;
-	width: 300px;	
-	/* Blue_01 */
-
-	color: #1F3F68;
-
-	opacity: 0.6;
-}
-.mailWebsite {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 26px;
-/* identical to box height, or 162% */
-margin-left: 0px;
-letter-spacing: 0.05em;
-opacity: 0.8;
-/* Blue_01 */
-
-color: #1F3F68;
-}
-
-.containerClientForm {
-	width:540px;
-	height:800px;
-	background: #FFFFFF;
-	box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
-	border-radius: 10px;
-	float:right;
-}
-
-.containerPicturePlace {
-	width: 940px;
-	height: 480px;
-	left: 213px;
-	top: 1332px;
-	z-index: 1;
-	background: url('../images/contact3.jpg');
-}
 
 
-;
+
+
+
 /* adaptive */
 @media screen and (max-width:1204px) {
     
@@ -704,17 +630,17 @@ a {
 	
 .text2 {
 	width: 520px;
-	height: 78px;
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 26px;
-	text-align: center;
-	letter-spacing: 0.05em;
-	color: #222222;
-	display: inline-block;
-	margin: 0 300px;
+	/* height: 78px; */
+	/* font-family: 'Roboto'; */
+	/* font-style: normal; */
+	/* font-weight: 400; */
+	/* font-size: 16px; */
+	/* line-height: 26px; */
+	/* text-align: center; */
+	/* letter-spacing: 0.05em; */
+	/* color: #222222; */
+	/* display: inline-block; */
+	margin: auto;
 }	
 
 .container_trio {
@@ -929,7 +855,7 @@ a {
     
 	.grad {
     /* width: 376px; */
-	height: 395px;
+	height: 376px;
     background: linear-gradient(0deg, #EBF3FB 25%, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 	/* display: block; */
 }
@@ -946,40 +872,37 @@ a {
 	
 
 .grad .container .zagolovok {
-	width: 350px;
+	/* width: 350px; */
 	height: 76px;
-	margin: 0 0 25px 0;
-	
-
+	margin: 0 0 15px 0;
 	/* left: 31.51px; */
 	/* top: 92px; */
-
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 300;
+	/* font-family: 'Roboto'; */
+	/* font-style: normal; */
+	/* font-weight: 300; */
 	font-size: 32px;
 	line-height: 38px;
-	text-align: center;
-	letter-spacing: 0.04em;
-
-	/* Blue_01 */
-
-	color: #1F3F68;
+	/* text-align: center; */
+	/* letter-spacing: 0.04em; */
+	/* color: #1F3F68; */
 
 }
 	
 .grad .container p {
     width: 343px;
 	height: 96px;
-	margin: 0 0 20px 0;
+	margin: 0 0 25px 15px;
 	text-align: center;
 }
 
 .grad .container button {	
 	position: relative;
-    margin-left: 90px;
-	width: 150px;
-	height: 50px;
+    left: 35%;
+	width: 108px;
+	height: 27px;
+	font-weight: 400px;
+	font-size: 12px;
+	line-height: 26px;
 }	
 	
 	
