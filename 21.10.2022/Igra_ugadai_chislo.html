@@ -11,7 +11,6 @@
 			}
 			
 			.outer {
-				max-height 450px;
 				max-width: 650px;
 				background: #dd8a50;
 				min-height: 250px;
@@ -146,28 +145,28 @@
 			
 			<div class='inner2'>	
 				<h1 class='text2'>Введите чсло от 0 до 100</h1>
-				<input type="number" name="poleVvoda"/>
+				<input type="number" class="poleVvoda"/>
 				<h2 class='text3'>Попыток: </h2>
 				<button class='knopka2'>Ок</button>
 			</div>
 			
 			<div class='inner3'>	
 				<h3 class='text4_1'>Надо ввести  именно число</h3>
-				<input type="number" name="poleVvoda"/>
+				<input type="number" class="poleVvoda"/>
 				<h2 class='text3'>Попыток: </h2>
 				<button class='knopka2'>Ок</button>
 			</div>		
 			
 			<div class='inner4'>	
 				<h3 class='text4_2'>Надо меньше</h3>
-				<input type="number" name="poleVvoda"/>
+				<input type="number" class="poleVvoda"/>
 				<h2 class='text3'>Попыток: </h2>
 				<button class='knopka2'>Ок</button>
 			</div>		
 			
 			<div class='inner5'>	
 				<h3 class='text4_3'>Надо больше</h3>
-				<input type="number" name="poleVvoda1"/>
+				<input type="number" class="poleVvoda"/>
 				<h2 class='text3'>Попыток: </h2>
 				<button class='knopka2'>Ок</button>
 			</div>		
@@ -205,11 +204,11 @@
 				inner6.style.display = 'none';
 			}
 			
-			.text3 = 'kolichestvoPopytok++';
+			.text3 = 'kolichestvoPopytok++';			
 			
 			pole_Vvoda.oninput = function(nasheChislo){
 								
-								
+						
 				
 				if (isNaN(nasheChislo)) {
 					inner1.style.display = 'none';
@@ -245,7 +244,10 @@
 					inner4.style.display = 'none';
 					inner5.style.display = 'block';
 					inner6.style.display = 'none'; 
+									
 				}
+			
+			
 			}
 				
 	</script>
