@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Game_ugadai_chislo</title>
+		
+		<style>
+			body {
+				height 100%;	
+				width: 100%;
+			}
+			
+			.outer {
+				max-height 450px;
+				max-width: 650px;
+				background: #dd8a50;
+				min-height: 250px;
+				min-width: 450px;
+				padding: 3%;
+				position: relative;
+				
+			}
+			
+			.inner1 {
+				width: 400px;
+				height: 200px;
+				background: #b0cbfb;
+				margin: 25% 20%;
+				position: relative;
+				text-align: center; 
+				padding-top: 10px;
+				display: block;
+			}		
+			
+						
+			.knopka1 {				
+				height: 40px;
+				width: 120px;
+				cursor: pointer;
+			}
+			
+			.inner2 {
+				width: 400px;
+				height: 200px;
+				background: #b0cbfb;
+				margin: 25% 20%;
+				position: relative;
+				text-align: center;
+				padding-top: 10px;
+				display: none;
+				
+			}
+			
+						
+			.knopka2 {				
+				height: 40px;
+				width: 120px;
+				cursor: pointer;
+			}
+			
+			.inner3 {
+				width: 400px;
+				height: 200px;
+				background: #b0cbfb;
+				margin: 25% 20%;
+				position: relative;
+				text-align: center;
+				padding-top: 10px;
+				display: none;
+			}
+			
+						
+			.knopka2 {				
+				height: 40px;
+				width: 120px;
+				cursor: pointer;
+			}
+			
+			.inner4 {
+				width: 400px;
+				height: 200px;
+				background: #b0cbfb;
+				margin: 25% 20%;
+				position: relative;
+				text-align: center;
+				padding-top: 10px;
+				display: none;
+			}
+			
+						
+			.knopka2 {				
+				height: 40px;
+				width: 120px;
+				cursor: pointer;
+			}
+			
+			.inner5 {
+				width: 400px;
+				height: 200px;
+				background: #b0cbfb;
+				margin: 25% 20%;
+				position: relative;
+				text-align: center;
+				padding-top: 10px;
+				display: none;
+			}
+			
+						
+			.knopka2 {				
+				height: 40px;
+				width: 120px;
+				cursor: pointer;
+			}
+			
+			.inner6 {
+				width: 400px;
+				height: 200px;
+				background: #b0cbfb;
+				margin: 25% 20%;
+				position: relative;
+				text-align: center;
+				padding-top: 10px;
+				display: none;
+			}
+			
+						
+			.knopka1 {				
+				height: 40px;
+				width: 120px;
+				cursor: pointer;
+			}
+			
+		</style>
+        
+        
+		
+    </head>
+    
+    <body>
+		<div class='outer'>
+			<div class='inner1'>	
+				<h1>Игра - Угадай число</h1>
+				<h2 class='text1'>Для  начала игры нажмите кнопку</h2>
+				<button class='knopka1'>Начать игру</button>
+			</div>
+			
+			<div class='inner2'>	
+				<h1 class='text2'>Введите чсло от 0 до 100</h1>
+				<input type="number" name="poleVvoda"/>
+				<h2 class='text3'>Попыток: </h2>
+				<button class='knopka2'>Ок</button>
+			</div>
+			
+			<div class='inner3'>	
+				<h3 class='text4_1'>Надо ввести  именно число</h3>
+				<input type="number" name="poleVvoda"/>
+				<h2 class='text3'>Попыток: </h2>
+				<button class='knopka2'>Ок</button>
+			</div>		
+			
+			<div class='inner4'>	
+				<h3 class='text4_2'>Надо меньше</h3>
+				<input type="number" name="poleVvoda"/>
+				<h2 class='text3'>Попыток: </h2>
+				<button class='knopka2'>Ок</button>
+			</div>		
+			
+			<div class='inner5'>	
+				<h3 class='text4_3'>Надо больше</h3>
+				<input type="number" name="poleVvoda1"/>
+				<h2 class='text3'>Попыток: </h2>
+				<button class='knopka2'>Ок</button>
+			</div>		
+				
+			<div class='inner6'>	
+				<h1 class='text5'>Вы угалали с N попыток</h1>
+				<h2>Сыграем еще раз?</h2>
+				<button class='knopka1'>Начать игру</button>
+			</div>	
+		</div>	
+	
+	<script>
+			
+			let knopka_1 = document.querySelector('.knopka1');
+			let knopka_2 = document.querySelector('.knopka2');
+			let pole_Vvoda = document.querySelector('.poleVvoda');
+			let kolichestvoPopytok;
+			let nasheChislo;
+			let zagadanoeChislo = Math.floor(Math.random() * 100 + 1);
+			
+			<!-- inner1.style.display = 'block'; -->
+			<!-- inner2.style.display = 'none'; -->
+			<!-- inner3.style.display = 'none'; -->
+			<!-- inner4.style.display = 'none'; -->
+			<!-- inner5.style.display = 'none'; -->
+			<!-- inner6.style.display = 'none'; -->
+			
+			knopka_1.onclick = function() {
+			 
+				inner1.style.display = 'none';
+				inner2.style.display = 'block';
+				inner3.style.display = 'none';
+				inner4.style.display = 'none';
+				inner5.style.display = 'none';
+				inner6.style.display = 'none';
+			}
+			
+			.text3 = 'kolichestvoPopytok++';
+			
+			pole_Vvoda.oninput = function(nasheChislo){
+								
+								
+				
+				if (isNaN(nasheChislo)) {
+					inner1.style.display = 'none';
+					inner2.style.display = 'none';
+					inner3.style.display = 'block';
+					inner4.style.display = 'none';
+					inner5.style.display = 'none';
+					inner6.style.display = 'none'; 
+					
+				}
+				else if (nasheChislo == zagadanoeChislo) {
+					inner1.style.display = 'none';
+					inner2.style.display = 'none';
+					inner3.style.display = 'none';
+					inner4.style.display = 'none';
+					inner5.style.display = 'none';
+					inner6.style.display = 'block'; 	
+						
+				}
+				else if (nasheChislo > zagadanoeChislo) {
+					inner1.style.display = 'none';
+					inner2.style.display = 'none';
+					inner3.style.display = 'none';
+					inner4.style.display = 'block';
+					inner5.style.display = 'none';
+					inner6.style.display = 'none'; 	
+				
+				}
+				else  {
+					inner1.style.display = 'none';
+					inner2.style.display = 'none';
+					inner3.style.display = 'none';
+					inner4.style.display = 'none';
+					inner5.style.display = 'block';
+					inner6.style.display = 'none'; 
+				}
+			}
+				
+	</script>
+	
+	</body>
+</html>
+	
+
+
+	
