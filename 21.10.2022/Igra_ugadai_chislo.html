@@ -57,199 +57,69 @@
 				cursor: pointer;
 			}
 			
-			.inner3 {
-				width: 400px;
-				height: 200px;
-				background: #b0cbfb;
-				margin: 25% 20%;
-				position: relative;
-				text-align: center;
-				padding-top: 10px;
-				display: none;
-			}
 			
-						
-			.knopka2 {				
-				height: 40px;
-				width: 120px;
-				cursor: pointer;
-			}
 			
-			.inner4 {
-				width: 400px;
-				height: 200px;
-				background: #b0cbfb;
-				margin: 25% 20%;
-				position: relative;
-				text-align: center;
-				padding-top: 10px;
-				display: none;
-			}
-			
-						
-			.knopka2 {				
-				height: 40px;
-				width: 120px;
-				cursor: pointer;
-			}
-			
-			.inner5 {
-				width: 400px;
-				height: 200px;
-				background: #b0cbfb;
-				margin: 25% 20%;
-				position: relative;
-				text-align: center;
-				padding-top: 10px;
-				display: none;
-			}
-			
-						
-			.knopka2 {				
-				height: 40px;
-				width: 120px;
-				cursor: pointer;
-			}
-			
-			.inner6 {
-				width: 400px;
-				height: 200px;
-				background: #b0cbfb;
-				margin: 25% 20%;
-				position: relative;
-				text-align: center;
-				padding-top: 10px;
-				display: none;
-			}
-			
-						
-			.knopka1 {				
-				height: 40px;
-				width: 120px;
-				cursor: pointer;
-			}
 			
 		</style>
-        
-        
-		
     </head>
     
     <body>
 		<div class='outer'>
 			<div class='inner1'>	
-				<h1>Игра - Угадай число</h1>
-				<h2 class='text1'>Для  начала игры нажмите кнопку</h2>
+				<h1 class='zagolovok'>Игра - угадай число !</h1>
+				<h2 class='text1'>Для начала игры нажмите кнопку</h2>
 				<button class='knopka1'>Начать игру</button>
 			</div>
 			
 			<div class='inner2'>	
 				<h1 class='text2'>Введите чсло от 0 до 100</h1>
-				<input type="number" class="poleVvoda"/>
-				<h2 class='text3'>Попыток: </h2>
+				<input type="text"  class="nasheChislo">
+				<h2 class='text3'>Попыток: ` `</h2>
 				<button class='knopka2'>Ок</button>
 			</div>
-			
-			<div class='inner3'>	
-				<h3 class='text4_1'>Надо ввести  именно число</h3>
-				<input type="number" class="poleVvoda"/>
-				<h2 class='text3'>Попыток: </h2>
-				<button class='knopka2'>Ок</button>
-			</div>		
-			
-			<div class='inner4'>	
-				<h3 class='text4_2'>Надо меньше</h3>
-				<input type="number" class="poleVvoda"/>
-				<h2 class='text3'>Попыток: </h2>
-				<button class='knopka2'>Ок</button>
-			</div>		
-			
-			<div class='inner5'>	
-				<h3 class='text4_3'>Надо больше</h3>
-				<input type="number" class="poleVvoda"/>
-				<h2 class='text3'>Попыток: </h2>
-				<button class='knopka2'>Ок</button>
-			</div>		
-				
-			<div class='inner6'>	
-				<h1 class='text5'>Вы угалали с N попыток</h1>
-				<h2>Сыграем еще раз?</h2>
-				<button class='knopka1'>Начать игру</button>
-			</div>	
 		</div>	
 	
 	<script>
 			
 			let knopka_1 = document.querySelector('.knopka1');
 			let knopka_2 = document.querySelector('.knopka2');
-			let pole_Vvoda = document.querySelector('.poleVvoda');
-			let kolichestvoPopytok;
-			let nasheChislo;
-			let zagadanoeChislo = Math.floor(Math.random() * 100 + 1);
+			let text_1 = document.querySelector('.text1');
+			let text_2 = document.querySelector('.text2');
+			let inner1 = document.querySelector('.inner1');
+			let inner2 = document.querySelector('.inner2');
+			let nasheChislo = document.querySelector('.nasheChislo').value;
+			let zagadanoeChislo;
+			let kolichestvoPopytok = document.querySelector('.text3') = 0;
 			
-			<!-- inner1.style.display = 'block'; -->
-			<!-- inner2.style.display = 'none'; -->
-			<!-- inner3.style.display = 'none'; -->
-			<!-- inner4.style.display = 'none'; -->
-			<!-- inner5.style.display = 'none'; -->
-			<!-- inner6.style.display = 'none'; -->
 			
-			knopka_1.onclick = function() {
-			 
+			knopka_1.onclick = function(s) {
+				zagadanoeChislo = Math.floor(Math.random() * 100 + 1);	
 				inner1.style.display = 'none';
 				inner2.style.display = 'block';
-				inner3.style.display = 'none';
-				inner4.style.display = 'none';
-				inner5.style.display = 'none';
-				inner6.style.display = 'none';
+				kolichestvoPopytok++;	
 			}
-			
-			.text3 = 'kolichestvoPopytok++';			
-			
-			pole_Vvoda.oninput = function(nasheChislo){
-								
-						
-				
-				if (isNaN(nasheChislo)) {
-					inner1.style.display = 'none';
-					inner2.style.display = 'none';
-					inner3.style.display = 'block';
-					inner4.style.display = 'none';
-					inner5.style.display = 'none';
-					inner6.style.display = 'none'; 
+				nasheChislo.oninput = function(){
 					
-				}
-				else if (nasheChislo == zagadanoeChislo) {
-					inner1.style.display = 'none';
-					inner2.style.display = 'none';
-					inner3.style.display = 'none';
-					inner4.style.display = 'none';
-					inner5.style.display = 'none';
-					inner6.style.display = 'block'; 	
-						
-				}
-				else if (nasheChislo > zagadanoeChislo) {
-					inner1.style.display = 'none';
-					inner2.style.display = 'none';
-					inner3.style.display = 'none';
-					inner4.style.display = 'block';
-					inner5.style.display = 'none';
-					inner6.style.display = 'none'; 	
-				
-				}
-				else  {
-					inner1.style.display = 'none';
-					inner2.style.display = 'none';
-					inner3.style.display = 'none';
-					inner4.style.display = 'none';
-					inner5.style.display = 'block';
-					inner6.style.display = 'none'; 
-									
+					if (isNaN(nasheChislo)) {
+						text_2.innerHTML.replace('Введите чсло от 0 до 100', 'Надо ввести  именно число');
+					}
+					else if (nasheChislo == zagadanoeChislo) {
+						text_2.innerHTML.replace('Введите чсло от 0 до 100', 'Вы угадали!');
+					}
+					else if (nasheChislo > zagadanoeChislo) {
+						text_2.innerHTML.replace('Введите чсло от 0 до 100', 'Надо меньше');
+					}
+					else  {
+						text_2.innerHTML.replace('Введите чсло от 0 до 100', 'Надо больше');
+					}
 				}
 			
+			inner1.style.display = 'block';
+			inner2.style.display = 'none';
 			
-			}
-				
+		    text_1.innerHTML.replace('Для начала игры нажмите кнопку', 'Сыграем еще раз?');
+			knopka_1.onclick = function(s) 
+			
 	</script>
 	
 	</body>
