@@ -17,24 +17,18 @@
 				min-width: 450px;
 				padding: 3%;
 				position: relative;
-				background-image: url('fon2.jpg');
-				
 				
 			}
 			
 			.inner1 {
 				width: 400px;
-				height: 260px;
+				height: 220px;
 				background: #b0cbfb;
 				margin: 25% 20%;
 				position: relative;
 				text-align: center; 
 				padding-top: 30px;
-				padding-bottom: 10px;
 				display: block;
-				background-image: url('fon1.jpg');
-				border: 2px solid black;
-				
 				 
 			}		
 			
@@ -48,16 +42,14 @@
 			
 			.inner2 {
 				width: 400px;
-				height: 260px;
+				height: 220px;
 				background: #b0cbfb;
 				margin: 25% 20%;
 				position: relative;
 				text-align: center;
 				padding-top: 30px;
-				padding-bottom: 10px;
 				display: none;
-				background-image: url('fon1.jpg');
-				border: 2px solid black;
+				
 			}
 			
 						
@@ -91,7 +83,7 @@
 			<div class='inner2'>	
 				<h1 class='text2'>Введите чсло от 0 до 100</h1>
 				<input type="text"  class="nasheChislo">
-				<h2 class='text3'></h2>
+				<h2 class='text3'>Количество попыток: </h2>
 				<button class='knopka2'>Ок</button>
 			</div>
 		</div>	
@@ -104,49 +96,45 @@
 			let text_2 = document.querySelector('.text2');
 			let inner1 = document.querySelector('.inner1');
 			let inner2 = document.querySelector('.inner2');
-			let nasheChislo = document.querySelector('.nasheChislo');
+			let nasheChislo = document.querySelector('.nasheChislo').value;
 			let zagadanoeChislo;
 			let kolichestvoPopytok = document.querySelector('.text3');
-			kolichestvoPopytok.innerHTML = 'Количество попыток: 0';
+			kolichestvoPopytok = 0;
 			
 			knopka_1.addEventListener ('click', function start() {
 				zagadanoeChislo = Math.floor(Math.random() * 100 + 1);	
 				inner1.style.display = 'none';
 				inner2.style.display = 'block';
-				kolichestvoPopytok.innerHTML = 'Количество попыток: 0';
 				
 			});
 				
 				knopka_2.onclick  = function(){
 					
+					kolichestvoPopytok.innerHTML = kolichestvoPopytok++;
 					
-					
-					if (isNaN(nasheChislo.value)) { 
-						text_2.innerHTML ='Надо ввести  именно число';
+					if (isNaN(nasheChislo)) { 
+						text_2.innerHTML.replace('Введите чсло от 0 до 100', 'Надо ввести  именно число');
 					}
-					else if (nasheChislo.value == zagadanoeChislo) {
-						text_1.innerHTML = 'Вы угадали c ' + kolichestvoPopytok.innerHTML.split(': ')[1] + ' попыток!\nСыграем еще раз?';
-                        inner1.style.display = 'block';
-                        inner2.style.display = 'none';
-						kolichestvoPopytok.innerHTML = "Количество попыток: " + 
-						(+kolichestvoPopytok.innerHTML.split(': ')[1] + 1);
-					
+					else if (nasheChislo == zagadanoeChislo) {
+						text_2.innerHTML.replace('Введите чсло от 0 до 100', 'Вы угадали c ' + kolichestvoPopytok + 'попыток !' );
 					}
-					else if (nasheChislo.value > zagadanoeChislo) {
-						text_2.innerHTML = 'Надо меньше';
-						kolichestvoPopytok.innerHTML = "Количество попыток: " + 
-						(+kolichestvoPopytok.innerHTML.split(': ')[1] + 1);
+					else if (nasheChislo > zagadanoeChislo) {
+						text_2.innerHTML.replace('Введите чсло от 0 до 100', 'Надо меньше');
 					}
 					else  {
-						text_2.innerHTML ='Надо больше';
-						kolichestvoPopytok.innerHTML = "Количество попыток: " + 
-						(+kolichestvoPopytok.innerHTML.split(': ')[1] + 1);
+						text_2.innerHTML.replace('Введите чсло от 0 до 100', 'Надо больше');
 					}
-				
 				}
 			
-						
-		
+			inner1.style.display = 'block';
+			inner2.style.display = 'none';
+			
+		    text_1.innerHTML.replace('Для начала игры нажмите кнопку', 'Сыграем еще раз?');
+			knopka_1.addEventListener ('click', function start() {
+			}); 
+				
+			
+			
 			
 	</script>
 	
