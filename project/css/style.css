@@ -167,7 +167,7 @@ body {
 }
 header {
     flex: none;
-    background: lightblue;
+    background: #606060;
     color: #fff;
 }
 main {
@@ -175,7 +175,7 @@ main {
 }
 footer {
     flex: none;
-    background: rgb(108,117,125);
+    background: rgba(227,231,235,.5);
     color: #fff;
 }
 
@@ -248,9 +248,9 @@ footer {
 
 /* action */
 .action {
-    background: red;
+    background: rgba(171,221,150,.25);
     padding: 30px;
-    color: yellow;
+    color: #5e5e53;
 }
 .action .container {
     display: flex;
@@ -389,17 +389,43 @@ footer {
 
 
 .lupa {
-	width: 30px;
+	width: 25px;
 	position: absolute;
+	margin-top: 5px;
+	
+
 } 
  
+.lichnyKabinet {
+	width: 90px;
+	display: block;
+}
  
 .lichnyKabinet img {
-	width: 50px;
-	justify-content: space-between;
-	margin-top: 15px;
+	width: 35px;
+	margin-left: 20px;
+    
+}	
+
+ .lichnyKabinet span {
+	display: inline-block;
+	color: white;
+	vertical-align: center;
+	font-size: 12px;
 }
 
+	
+.action {
+    background: rgba(171,221,150,.25);
+    color: #5e5e53;
+}
+	
+
+footer {
+    
+	background: rgba(227,231,235,.5);
+   
+}
 
 footer .container {
 	display: flex;
@@ -409,9 +435,19 @@ footer .container {
 
 .stolbFooter1, .stolbFooter2,  .stolbFooter3, .stolbFooter4 {
 	margin: auto;
-	font: 14px/20px;
-	color: white;
+	
+	
 }
+
+.stolbFooter1 a, .stolbFooter2 a,  .stolbFooter3 a, .stolbFooter4 a {
+	
+	font-size: 16px;
+	font-weight: 600;
+	color: black;
+	
+}
+
+
 
 .pointFooter::before {
 	content: '•  ';
@@ -426,12 +462,39 @@ footer .container {
 	font-size: 14px;
 	line-height: 14px;
 	text-align: center;
-	color: lightblue;
+	color: #637378;
 	
 }
 
 
+.content {
+	font-size:  14px;
+	font-weight: 300;
+	
+}
 
+
+.slider_block img {
+	height: 100%
+}
+
+
+/* my job catalog */
+
+.filter li {
+	display: block;
+}
+
+li input {
+	float: left;
+	margin-top: 9px;
+	margin-right: 9px;
+
+}
+
+button {
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+}
 
 
 /* adaptive */
