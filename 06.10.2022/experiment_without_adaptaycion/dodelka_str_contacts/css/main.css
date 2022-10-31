@@ -481,8 +481,6 @@ a {
 	display: grid;
 }
 .containerOurContact img {
-	
-	
 	width: 300px;
 	height:181px;
 	 
@@ -494,7 +492,7 @@ a {
 	color: #1F3F68;
 
 }			 
-.ourNamber {
+.ourText, .ourNamber {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 300;
@@ -508,7 +506,14 @@ a {
 
 	opacity: 0.6;
 }
-.mailWebsite {
+
+.ourNamber::before {
+	content: url(../images/contact4.png); 
+	margin-right: 15px;
+	vertical-align: -25%;
+}
+
+.mail, .website {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
@@ -518,6 +523,21 @@ a {
 	letter-spacing: 0.05em;
 	opacity: 0.8;
 	color: #1F3F68;
+	width: 300px;
+}
+
+.website::before  {
+	content: url(../images/contact5.png); 
+	float: left;
+	margin-right: 15px;
+	vertical-align: -25%;	
+}	
+
+.mail::before {
+	content: url(../images/contact6.png); 
+	margin-right: 15px;
+	vertical-align: -5%;	
+	
 }			
 .containerClientForm {
 	width:540px;
@@ -527,6 +547,10 @@ a {
 	border-radius: 10px;
 	float:right;
 }
+
+
+
+
 
 .form {
 	height:690px;
@@ -768,12 +792,7 @@ a {
 	
  }
  
-	.text1 {
 		
-		
-	
-	}
-	
     footer {
         height: 654px;
     }
@@ -804,10 +823,24 @@ a {
         height: 10px;
         width: 40px;
     }
+	
+	/* contacts */
    	
+	.containerOuter {
+		width: 768px;
+		justify-content: center;
+		gap: 64px;
+		margin-top: 400px;
+		margin-left: 200px;
+	}
+
+	.containerOurContact {
+		align-items: flex-end;
+	}
+
 }
 
-@media screen and (max-width:940px)
+@media screen and (max-width:940px) {
 
 .containerPicturePlace {
 	width: 100%;
@@ -821,6 +854,7 @@ a {
 
 
 
+}
 
 
 @media screen and (max-width:767px) {
@@ -1010,6 +1044,70 @@ color: #000000;
         height: 20px;
         width: 20px;
     }
+	
+	/* contacts */
+	
+	.containerOuter {
+		width: 375px;
+		gap: 46px;
+		margin: 400px auto 32px;
+	}
+	
+	.containerClientForm {
+		height: 514px;
+		width: 343px;
+		display: flex;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.form {
+		width: 272px;
+		height: 90%;
+		margin: auto;
+	}
+	
+	.containerPicturePlace {
+		width: 100%;
+		height: 323px;
+	}
+	
+	.Adress  {
+		font-size: 16px;
+	}			 
+	
+	.textAboveInput {
+		font-weight: 400;
+		font-size: 14px;
+	}
+
+	.input{
+	
+	height: 47px;
+	line-height: 30px;
+	font-size: 14px;
+	
+	}
     
+	.textarea {
+		height:93px;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 30px;
+		
+	}
+		
+	.submit {
+		width: 100%;
+		height: 47px;
+		line-height:26px;
+		box-sizing: border-box;
+		
+	}
+
+
+
+
+
 }
 

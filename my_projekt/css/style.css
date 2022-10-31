@@ -373,17 +373,18 @@ footer {
 
  .logo {
 	width: 70px;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 
 
 .polePoiska {
    
-    border-radius: 5px;
+    border-radius: 3px;
 	border: 1px solid white;
 	padding-left: 30px;
 	position: relative;
+	color: white;
 }
  
 
@@ -391,7 +392,8 @@ footer {
 .lupa {
 	width: 25px;
 	position: absolute;
-	margin-top: 5px;
+	margin: 4px;
+	
 	
 
 } 
@@ -399,6 +401,8 @@ footer {
 .lichnyKabinet {
 	width: 90px;
 	display: block;
+	margin-top: 10px;
+	line-height: 1;
 }
  
 .lichnyKabinet img {
@@ -410,7 +414,7 @@ footer {
  .lichnyKabinet span {
 	display: inline-block;
 	color: white;
-	vertical-align: center;
+	/* vertical-align: center; */
 	font-size: 12px;
 }
 
@@ -481,19 +485,46 @@ footer .container {
 
 /* my job catalog */
 
+.zagolovok {
+	margin-top: 20px;
+}
+
 .filter li {
 	display: block;
 }
 
 li input {
 	float: left;
-	margin-top: 9px;
-	margin-right: 9px;
+	margin-top: 10px;
+	margin-right: 10px;
 
 }
 
 button {
-	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	width: 110px;
+	height: 40px;
+	background: gray;
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: 600;
+	color: white;
+	margin-top: 10px;
+}
+
+.section1 {
+	width: 250px;
+}
+
+.section2 {
+	width: 100%;
+	display: flex;
+	
+}
+
+.tovar {
+	width: 100px;
+	height: 200px;
+	
 }
 
 
