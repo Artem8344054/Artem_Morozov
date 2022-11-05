@@ -7,9 +7,11 @@
         
         <title>Каталог</title>
         
+        <link rel="stylesheet" href="css/jquery-ui.css">
         <link rel="stylesheet" href="css/style.css">
         
         <script defer src="js/jquery-3.6.1.min.js"></script>
+        <script defer src="js/jquery-ui.min.js"></script>
         <script defer src="js/slider.js"></script>
         <script defer src="js/main.js"></script>
     </head>
@@ -17,97 +19,303 @@
     <body>
         <header>
             <section class="container">
-                <div id="city" title="Если ваш город определен неправильно, нажмите для выбора правильного города">Ваш город: <span>Москва</span></div>
+                <div id="city" title="Если ваш город определен неправильно, нажмите для выбора правильного города">Ваш город: <span></span></div>
             </section>
             <section class="container">
 				<nav class='logoPoiskKabinet'>
-					<img class='logo' src='images/logotip4.png'>
+					<img class='logo' src='images/logotip5.png'>
 					<a><img class='lupa' src='images/lupa4.png'><input class='polePoiska' type='search' placeholder=''>
 					</a>
-					<a class='lichnyKabinet' href="forma.html"><img src='images/LichnyKabinet2.png'><span>вход в кабинет </span></a>
+					<a class='lichnyKabinet' href="forma.html"><img src='images/LichnyKabinet3.png'><span>вход в кабинет </span></a>
                 </nav>	
 			</section>
-            <section class="container">
+            <section class="container1">
                 <nav class="topmenu">
                     <a href="index.html"><span>Главная страница</span></a>
-                    <a href="#"><span>Каталог</span></a>
-                    <a href="#"><span>Корзина</span></a>
-                    <a href="#"><span>Контакты</span></a>
+					<a href="catalog.html"><span>Каталог</span></a>
+					<a href="product.html"><span>Товар</span></a>
+                    <a href="order.html"><span>Корзина</span></a>
+                    <a href="order.html"><span>Контакты</span></a>
+
                 </nav>
             </section>
         </header>
         
-        <main>
-			<div class="container">
-				<div class='section1'>
-					<h1 class='zagolovok'>Каталог</h1>
-						<ul>
-							<li><a></a>romashka</a></li>
-							<li><a>vasilek</a></li>
-							<li><a>glodiolus</a></li>
-							<li><a>astra</a></li>
-							<li><a>pion</a></li>
-							<li><a>liliya</a></li>
-							<li><a>hrizantema</a></li>
-						</ul>
-						<hr>
-						<ol class="filter">	
-							<li><label for="romashka"> romashka<input type="checkbox" class="romashka"></label></li>
-							<li><label for="vasilek"> vasilek<input type="checkbox" class="vasilek"></label></li>
-							<li><label for="glodiolus"> glodiolus<input type="checkbox" class="glodiolus"></label></li>
-							<li><label for="astra"> astra<input type="checkbox" class="astra"></label></li>
-							<li><label for="pion"> pion<input type="checkbox" class="pion"></label></li>
-							<li><label for="liliya"> liliya<input type="checkbox" class="liliya"></label></li>
-							<li><label for="hrizantema"> hrizantema<input type="checkbox" class="hrizantema"></label></li>
-							<button type='submit'>подобрать</button>
+        <main class="catalog">
+            <section class="container">
+                <aside>
+					<nav class="catmenu">
+                        <p>Каталог</p>
+                        <ul>
+                            <li>
+                                <a href="#"><span>Лицо</span></a>
+								
+                                <ul>
+                                    <li>
+                                        <a href="#"><span>Очищение</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Тонизация</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Кремы и маски</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+								
+                            </li>
+                            <li>
+                                <a href="#"><span>Тело</span></a>
+                                
+                                <ul>
+                                    <li>
+                                        <a href="#"><span>Скрабы и пилинги</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Кремы для тела</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Лосьоны для тела</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            </li>
+                            <li>
+                                <a href="#"><span>Макияж</span></a>
+                                
+                                <ul>
+                                    <li>
+                                        <a href="#"><span>Тональные средства</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Губы</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Глаза</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- /catmenu -->
+                    <div class="filters">
+                        <p>Фильтры</p>
+                        <ol class="filter">	
+							<li><label for="romashka">Очищение<input type="checkbox" class="romashka"></label></li>
+							<li><label for="vasilek">Тонизация<input type="checkbox" class="vasilek"></label></li>
+							<li><label for="glodiolus">Кремы для лица<input type="checkbox" class="glodiolus"></label></li>
+							<li><label for="astra">Маски<input type="checkbox" class="astra"></label></li>
+							<li><label for="pion">Скраб для тела<input type="checkbox" class="pion"></label></li>
+							<li><label for="liliya">Крем для тела<input type="checkbox" class="liliya"></label></li>
+							<li><label for="hrizantema">Лосьон для тела<input type="checkbox" class="hrizantema"></label></li>
 						</ol>
-				</div>
-				<div class='section2'>
-					<div class='tovar'>
-						<a href='images/krem1.jpg'><img class='logo' src='images/krem1.jpg'></a>
-						<a href='images/krem1.jpg'>Стоимость:</a>
-						<a href='images/krem1.jpg'>Увлажняющее средство для кожи:</a>
+						<p>
+                            <label for="amount">Цена от</label>
+                            <input type="text" id="amount1">
+                            <label for="amount">до</label>
+                            <input type="text" id="amount2">
+                        </p>          
+                        <div id="slider-range"></div>
+                    	<button type='submit'>подобрать</button>
 					</div>
-					<div class='tovar'>
-						<a href='images/krem2.jpg'><img class='logo' src='images/krem2.jpg'></a>
-						<a href='images/krem2.jpg'>Стоимость:</a>
-						<a href='images/krem2.jpg'>Увлажняющее средство для кожи:</a>
+                </aside>
+                
+                <article>
+                    <div class="cat-item">
+						<a href='product.html'><img class='tovarVkataloge' src='images/krem5.jpg'></a>
+						<a href='product.html' class='price'>1 000 RUB</a>
+						<a href='product.html' class='opisanie'>Крем для умывания</a>
 					</div>
-					<div class='tovar'>
-						<a href='images/krem3.jpg'><img class='logo' src='images/krem3.jpg'></a>
-						<a href='images/krem3.jpg'>Стоимость:</a>
-						<a href='images/krem3.jpg'>Увлажняющее средство для кожи:</a>
+                    <div class="cat-item">
+						<a href='product.html'><img class='tovarVkataloge' src='images/krem6.jpg'></a>
+						<a href='product.html' class='price'>1 000 RUB</a>
+						<a href='product.html' class='opisanie'>Гидрофильное масло</a>
 					</div>
-					<div class='tovar'>
-						<a href='images/krem4.jpg'><img class='logo' src='images/krem4.jpg'></a>
-						<a href='images/krem4.jpg'>Стоимость:</a>
-						<a href='images/krem4.jpg'>Увлажняющее средство для кожи:</a>
+                    <div class="cat-item">
+						<a href='product.html'><img class='tovarVkataloge' src='images/krem7.jpg'></a>
+						<a href='product.html' class='price'>1 000 RUB</a>
+						<a href='product.html' class='opisanie'>Молочко для умывания</a>
 					</div>
-					
-				</div>
-			
-			</div>
-		
-        </main>
+					<div class="cat-item">
+						<a href='product.html'><img class='tovarVkataloge' src='images/krem8.jpg'></a>
+						<a href='product.html' class='price'>1 000 RUB</a>
+						<a href='product.html' class='opisanie'>Тоник для чувствительной кожи</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html'><img class='tovarVkataloge' src='images/krem9.jpg'></a>
+						<a href='product.html' class='price'>1 000 RUB</a>
+						<a href='product.html' class='opisanie'>Тоник для комбинированной кожи</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html.bigimage'><img class='tovarVkataloge' src='images/krem10.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Тоник для нормальной кожи</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem11.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Увлажняющий крем для возрастной кожи</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem12.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Питательный ночной крем</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem13.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Крем для век</a>
+					</div>
+                    <div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem14.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Крем для тела</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem15.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Крем для тела</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem16.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Крем для тела</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem17.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Маска для лица питательная</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem18.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Маска для лица с гиалуроновой кислотой</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem19.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Маска для лица увлажняющая</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem20.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Скраб для тела антицеллюлитный</a>
+					</div>
+                	<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem21.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Скраб для тела согревающий</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem22.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Скраб для тела Аромотерапия</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem24.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Палетка теней 01</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem25.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Палетка теней 02</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem26.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Палетка теней 03</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem27.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Губная помада "Алая роза"</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem28.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Губная помада "Ежевика"</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem29.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Губная помада "Бордо"</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem30.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Пудра для лица 01</a>
+					</div>
+                	<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem31.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Пудра для лица 02</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem32.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Пудра для лица 03</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem36.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Лосьон для тела с мерцающим эффектом</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem37.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Лосьон для тела парфюмированный</a>
+					</div>
+					<div class="cat-item">
+						<a href='product.html' target='.bigimage'><img class='tovarVkataloge' src='images/krem38.jpg'></a>
+						<a href='product.html' target='.bigimage' class='price'>1 000 RUB</a>
+						<a href='product.html' target='.bigimage' class='opisanie'>Лосьон для тела парфюмированный</a>
+					</div>
+				
+				</article>
+            </section>
         
-        <footer>
+        
+						
+						
+				<!-- <div class='section2'> -->
+					<!-- <div class='tovar'> -->
+					<!-- <div class='tovar'> -->
+						<!-- <a href='images/krem2.jpg'><img class='logo' src='images/krem2.jpg'></a> -->
+						<!-- <a href='images/krem2.jpg'>1 000 рублей</a> -->
+						<!-- <a href='images/krem2.jpg'>Увлажняющее средство для кожи:</a> -->
+					<!-- </div> -->
+					<!-- <div class='tovar'> -->
+						<!-- <a href='images/krem3.jpg'><img class='logo' src='images/krem3.jpg'></a> -->
+						<!-- <a href='images/krem3.jpg'>1 000 рублей</a> -->
+						<!-- <a href='images/krem3.jpg'>Увлажняющее средство для кожи:</a> -->
+					<!-- <div class='tovar'> -->
+						<!-- <a href='images/krem4.jpg'><img class='logo' src='images/krem4.jpg'></a> -->
+						<!-- <a href='images/krem4.jpg'>1 000 рублей</a> -->
+						<!-- <a href='images/krem4.jpg'>Увлажняющее средство для кожи:</a> -->
+					<!-- </div> -->
+				<!-- </main> -->
+        
+		
+		
+		<footer>
             <div class="container">
-				<nav class='stolbFooter1'>
-					<a href='#'><p class='pointFooter'>Каталог</p></a>
-					<a href='#'><p class='pointFooter'>Акции</p></a>
-				</nav>	
-				<nav class='stolbFooter2'>	
-					<a href='#'><p class='pointFooter'>Для лица</p></a>
-					<a href='#'><p class='pointFooter'>Для тела</p></a>
-				</nav>	
-				<nav class='stolbFooter3'>	
-					<a href='#'><p class='pointFooter'>Всё о красоте</p></a>
-					<a href='#'><p class='pointFooter'>Программы лояльности</p></a>
-				</nav>				
-				<nav class='stolbFooter4'>
-					<a href='#'><p class='pointFooter'>Доставка и оплата</p></a>
-					<a href='#'><p class='pointFooter'>Наши контакты</p></a>
-				</nav>	
+				<ul class='stolbFooter1'>
+					<li><a href='catalog.html'><p class='pointFooter'>Каталог</p></a></li>
+					<li><a href='#'><p class='pointFooter'>Акции</p></a></li>
+				</ul>	
+				<ul class='stolbFooter2'>	
+					<li><a href='#'><p class='pointFooter'>Для лица</p></a></li>
+					<li><a href='#'><p class='pointFooter'>Для тела</p></a></li>
+				</ul>	
+				<ul class='stolbFooter3'>	
+					<li><a href='#'><p class='pointFooter'>Всё о красоте</p></a></li>
+					<li><a href='#'><p class='pointFooter'>Программы лояльности</p></a></li>
+				</ul>				
+				<ul class='stolbFooter4'>
+					<li><a href='order.html'><p class='pointFooter'>Доставка и оплата</p></a></li>
+					<li><a href='contacts.html'><p class='pointFooter'>Наши контакты</p></a></li>
+				</ul>	
 				
 			</div>
 				<p class='copyright'>&copy ArtMorozov Сохранение молодости и красоты Вашей кожи </p><br>
@@ -117,3 +325,5 @@
 		
     </body>
 </html>
+		
+   

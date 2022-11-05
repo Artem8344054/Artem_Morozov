@@ -5,22 +5,22 @@ let rangemax = 300;
 let startbasket = [
     {
         id: 1,
-        name: 'Romashka',
-        price: 1000,
+        name: 'ZHABA',
+        price: 2000,
         quantity: 100,
         link: ''
     },
     {
         id: 2,
-        name: 'Vasilek',
-        price: 1000,
+        name: 'GADIUKA',
+        price: 3000,
         quantity: 10,
         link: ''
     },
     {
         id: 111,
-        name: 'Pion',
-        price: 1000,
+        name: 'Cangaroo',
+        price: 15500,
         quantity: 1,
         link: ''
     }
